@@ -4,7 +4,7 @@ class Main {
     public static void main(String[] args) {
         int x = 50;
 
-        int left = 0, right = x;
+        int left = 1, right = x;
         int result = -1;
         
         while(left <= right) {
@@ -13,7 +13,6 @@ class Main {
             
             if(square == x) {
                 result = mid;
-                break;
             } else if(square <= x){
                 result = mid;
                 left = mid + 1;
