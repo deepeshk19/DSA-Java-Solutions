@@ -9,10 +9,10 @@ class Main {
         
         int left = 0, sum = 0, maxSum = 0;
         
-        for(int right = 0; right < arr.length-1; right++) {
+        for(int right = 0; right < arr.length; right++) {
             sum = sum + arr[right];
             
-            if(sum > k) {
+            while(sum > k) {
                 sum = sum - arr[left];
                 left++;
             }
